@@ -3,7 +3,7 @@
     font-style: normal;
     font-weight: 400;
     src: local("TTLakes-Regular"),
-        url("/fonts/TTLakes-Regular.woff") format("woff"),
+        url("fonts/TTLakes-Regular.woff") format("woff"),
 }
 
 body {
@@ -72,6 +72,7 @@ body {
 }
 
 @media (min-width: 768px) {
+
     .call,
     .chat,
     .profile {
@@ -338,7 +339,7 @@ h1 .status {
 @media (min-width: 1120px) {
     .text3 {
         display: inline-block;
-        
+
     }
 }
 
