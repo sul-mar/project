@@ -6,6 +6,20 @@
         url("../fonts/TTLakes-Regular.woff") format("woff"),
 }
 
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding-left: 16px;
+    padding-right: 16px;
+}
+
+@media (min-width: 1200px) {
+    .container {
+        padding-left: 0;
+        padding-right: 0;
+    }
+}
+
 body {
     font-family: "TTLakes-Regular", sans-serif;
     font-weight: 400;
@@ -208,18 +222,19 @@ h1 .status {
 .slideMenu {
     overflow: auto;
     width: 100%;
+    display: flex;
+    align-items: center;
 }
 
 .slideMenu--overflow {
     display: flex;
-
     width: 100%;
     justify-content: space-between;
 }
 
 .slide-block {
     display: flex;
-    justify-content: space-between;
+    flex-wrap: nowrap;
     overflow: auto;
     scrollbar-width: none;
     padding-left: 16px;
@@ -246,14 +261,26 @@ h1 .status {
     line-height: 150%;
     letter-spacing: -0.01em;
     color: #7e7e82;
+    height: 40px;
 }
 
-.block:first-child {
+.slide-block li:first-child a {
     border: 2px solid #b8ffec;
     border-radius: 6px;
     width: 246px;
     height: 40px;
     background: #fff;
+}
+
+.burger:hover,
+.call:hover,
+.chat:hover,
+.profile:hover,
+.repair-list:hover,
+.status:hover,
+.slide-block li a:hover,
+.content_text:hover {
+    cursor: pointer;
 }
 
 @media (min-width: 1120px) {
